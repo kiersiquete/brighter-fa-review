@@ -1,0 +1,27 @@
+{
+  "name": "Brighter Review — FA Exam Preparation",
+  "short_name": "Brighter Review",
+  "description": "Offline VUL and Traditional Life exam reviewer with mastery phases and answer review.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#003946",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "sunlife-assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "sunlife-assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
