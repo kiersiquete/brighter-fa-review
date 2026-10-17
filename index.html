@@ -27,11 +27,15 @@
     @media(max-width:420px){.shell{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));padding-bottom:calc(36px + env(safe-area-inset-bottom))}.brandbar{align-items:flex-start;gap:10px}.brand-logo{width:126px}.unofficial{font-size:.58rem;line-height:1.35;max-width:145px}.mast{padding-top:28px}.mast h1{font-size:clamp(2.45rem,13vw,3.35rem);line-height:.94}.lead{font-size:.96rem}.hero-panel{padding:20px}.hero-points{margin-top:18px}.exam-tab{min-height:70px}.section-head{margin-top:28px}.flash{min-height:0;padding:18px}.card-controls{position:sticky;bottom:0;padding:10px 0 4px;background:linear-gradient(transparent,#f6f8f8 22%)}.quiz-card{border-radius:14px;padding:18px 14px}.qmeta{font-size:.75rem}.quiz-card h3{font-size:1.2rem}.option{padding:13px 12px}.phase-panel{padding:15px}.phase-actions .btn{flex:1}.key-tools{align-items:stretch;flex-direction:column}.key-tools input{max-width:none}.foot{font-size:.74rem}}
     @media(prefers-reduced-motion:reduce){.app-intro{display:none}.motion-ready .brandbar,.motion-ready .mast>*,.motion-ready .exam-switch,.motion-ready nav{opacity:1!important}*,*:before,*:after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}}
     @media(max-width:420px){.phase-actions .btn{flex:1 1 100%;width:100%}.phase-actions .scoreline{text-align:center}.quiz-controls .btn{min-height:48px}}
+    .intro-powered{margin-top:16px;color:var(--muted);font-size:.7rem;letter-spacing:.04em;animation:introRise .5s .48s ease both}.intro-powered b{color:var(--navy)}
+    .powered-watermark{position:fixed;z-index:90;right:12px;bottom:12px;display:flex;align-items:center;gap:6px;padding:7px 10px;border:1px solid rgba(0,84,164,.14);border-radius:999px;background:rgba(255,255,255,.9);box-shadow:0 5px 18px rgba(0,57,70,.09);color:var(--muted);font-size:.66rem;letter-spacing:.035em;pointer-events:none;backdrop-filter:blur(8px)}
+    .powered-watermark:before{content:"";width:7px;height:7px;border-radius:2px;background:linear-gradient(135deg,var(--gold),var(--blue));transform:rotate(45deg)}.powered-watermark b{color:var(--navy)}
+    @media(max-width:420px){.powered-watermark{right:8px;bottom:calc(8px + env(safe-area-inset-bottom));padding:6px 8px;font-size:.6rem;opacity:.86}}
   </style>
 </head>
 <body class="is-loading">
 <div class="app-intro" id="appIntro" role="status" aria-label="Opening Brighter Review">
-  <div class="intro-inner"><img class="intro-logo" src="sunlife-assets/brighter-review-logo-white.png" alt=""><div class="intro-title">Brighter Review</div><div class="intro-sub">Learn · Master · Move forward</div><div class="intro-track" aria-hidden="true"></div></div>
+  <div class="intro-inner"><img class="intro-logo" src="sunlife-assets/brighter-review-logo-white.png" alt=""><div class="intro-title">Brighter Review</div><div class="intro-sub">Learn · Master · Move forward</div><div class="intro-track" aria-hidden="true"></div><div class="intro-powered">Powered by <b>Scalgent</b></div></div>
 </div>
 <noscript><style>.app-intro{display:none}body.is-loading{overflow:auto}</style></noscript>
 <main class="shell">
@@ -83,6 +87,7 @@
   </section>
   <footer class="foot"><span><b>Brighter Review</b> preserves all supplied questions, choices, and marked answers.</span><span>Unofficial independent reviewer · No endorsement or affiliation implied.</span></footer>
 </main>
+<div class="powered-watermark" aria-label="Powered by Scalgent">Powered by <b>Scalgent</b></div>
 <script>
 const Q = [
 {"n":1,"q":"Which of the following below statement options to top-up under variable life insurance product is FALSE?","s":[],"o":["Policy owners are normally allowed to top-up their policies at any time, subject to a minimum amount.","To top-up a policy, the policy owner pays further single premium at the time of top-up.","Policy owners may buy additional units of the variable life fund and these units will be allocated to new variable life insurance policies.","Further premiums at the time of top-up will be used in full, after deducting charges for top-ups, to purchase additional units of variable life funds."],"a":2,"e":"Top-up units are allocated to the existing policy, not a new policy."},
