@@ -1,9 +1,10 @@
-const CACHE_NAME = "brighter-review-offline-v4";
+const CACHE_NAME = "brighter-review-offline-v5";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
   "./sunlife-assets/central-mindanao-warriors.png",
+  "./sunlife-assets/central-mindanao-warriors-horizontal.png",
   "./sunlife-assets/brighter-review-logo.png",
   "./sunlife-assets/brighter-review-logo-white.png",
   "./sunlife-assets/icon-192.png",
